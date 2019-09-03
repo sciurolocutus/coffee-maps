@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: stain-submission-api
+  profiles: dev
+server:
+  port: 8080
+stain:
+  submission:
+    root-dir: /path/to/root-dir
+    submitted-dir: submitted/
+    completed-dir: completed/
+  queue:
+    exchange: stain-exchange
+    routing-key: stain-process-queue
+    uri: amqp://guest:guest@localhost

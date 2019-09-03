@@ -1,0 +1,3 @@
+rootProject.name = 'coffee-maps'
+include 'submission-api'
+
