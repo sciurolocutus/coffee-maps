@@ -1,0 +1,1 @@
+Part of a project to create map-like images based on people's coffee stains. This API will submit images to a queue to be processed, and be able to look for the completed images.
