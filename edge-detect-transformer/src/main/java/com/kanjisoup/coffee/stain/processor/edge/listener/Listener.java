@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import javax.imageio.ImageIO;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Slf4j
@@ -21,7 +22,7 @@ public class Listener {
 
   private StainProcessorConfig config;
 
-  public Listener(ImageTransformer transformer,
+  public Listener(@Qualifier("grayscaleTransformer") ImageTransformer transformer,
       StainProcessorConfig config) {
     this.transformer = transformer;
     this.config = config;
@@ -48,7 +49,7 @@ public class Listener {
     BufferedImage transformed = transformer.transform(img);
 
     File targetFile = Path.of(config.getCompletedDir(),
-        Path.of(stainQueueDto.getFilePath()).getFileName().toString())
+        Path.of(stainQueueDto.getFilePath()).getFileName().toString() + ".png")
         .toFile();
     try {
       ImageIO.write(transformed, "PNG", targetFile);
