@@ -1,4 +1,4 @@
-package com.kanjisoup.coffee.stain.submission.domain;
+package com.kanjisoup.coffee.stain.sdk.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(scanBasePackages = "com.kanjisoup.coffee.stain.submission.app.config")
 public class SubmissionApp {
 
-    public static void main(String[] args) {
-        SpringApplication.run(SubmissionApp.class);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(SubmissionApp.class);
+  }
 }

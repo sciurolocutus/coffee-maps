@@ -4,6 +4,14 @@ plugins {
     id 'io.freefair.lombok' version '4.0.1'
 }
 
+allprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+
 group 'com.kanjisoup.coffee'
 version '1.0-SNAPSHOT'
 

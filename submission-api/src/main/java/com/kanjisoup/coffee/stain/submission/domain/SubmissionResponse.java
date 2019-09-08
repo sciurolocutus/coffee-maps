@@ -6,5 +6,6 @@ import lombok.Data;
 @AllArgsConstructor
 @Data
 public class SubmissionResponse {
-    private String queuedName;
+
+  private String queuedName;
 }
