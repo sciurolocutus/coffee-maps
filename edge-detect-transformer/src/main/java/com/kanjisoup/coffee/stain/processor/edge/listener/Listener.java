@@ -27,7 +27,8 @@ public class Listener {
     this.config = config;
   }
 
-  public void receiveMessage(String message) {
+  public void receiveMessage(byte[] msg) {
+    String message = new String(msg);
     Gson gson = new Gson();
     StainQueueDto stainQueueDto = gson.fromJson(message, StainQueueDto.class);
     log.debug("Got new image on queue: uuid: {}, filePath: {}", stainQueueDto.getUuid(),
