@@ -2,3 +2,5 @@ rootProject.name = 'coffee-maps'
 include 'submission-api'
 include 'edge-detect-transformer'
 include 'queue-sdk'
+include 'edgedetector'
+

@@ -22,7 +22,7 @@ public class Listener {
 
   private StainProcessorConfig config;
 
-  public Listener(@Qualifier("grayscaleTransformer") ImageTransformer transformer,
+  public Listener(@Qualifier("edgeDetectTransformer") ImageTransformer transformer,
       StainProcessorConfig config) {
     this.transformer = transformer;
     this.config = config;

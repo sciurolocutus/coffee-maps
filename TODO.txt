@@ -1,0 +1,2 @@
+https://imagej.nih.gov/ij/plugins/canny/Canny_Edge_Detector.java
+Check this out, and implement a worker, which runs an edge detect transform, and then moves it back to the target directory.

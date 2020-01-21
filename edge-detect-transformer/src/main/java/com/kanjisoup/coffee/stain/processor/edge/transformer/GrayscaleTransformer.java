@@ -1,7 +1,7 @@
 package com.kanjisoup.coffee.stain.processor.edge.transformer;
 
-import com.kanjisoup.coffee.stain.processor.edge.transformer.util.Grayscale;
 import com.kanjisoup.coffee.stain.sdk.transform.ImageTransformer;
+import edgedetector.util.Grayscale;
 import java.awt.image.BufferedImage;
 import org.springframework.stereotype.Component;
 
